@@ -27,6 +27,14 @@
             {
                 Console.WriteLine("Readiness Category: Adult");
             }
+
+            Console.Write("\nDo you have a valid ID? (yes/no): ");
+            string idInput = Console.ReadLine();
+            bool validID = idInput == "yes";
+
+            Console.Write("Have you completed orientation? (yes/no): ");
+            string orientationInput = Console.ReadLine();
+            bool completedOrientation = orientationInput == "yes";
         }
     }
 }
