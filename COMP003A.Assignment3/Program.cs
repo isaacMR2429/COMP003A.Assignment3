@@ -39,6 +39,24 @@
             string orientationInput = Console.ReadLine();
             bool completedOrientation = orientationInput == "yes";
 
+            string readinessStatus;
+            if (validID && ageCategory == "Adult" && completedOrientation)
+            {
+                readinessStatus = "Ready";
+                Console.WriteLine("\nReadiness Status: Ready");
+            }
+            else if (validID && ageCategory == "Adult" && !completedOrientation)
+            {
+                readinessStatus = "Conditionally Ready";
+                Console.WriteLine("\nReadiness Status: Conditionally Ready");
+            }
+            else
+            {
+                readinessStatus = "Not Ready";
+                Console.WriteLine("\nReadiness Status: Not Ready");
+            }
+
+            Console.Write("");
         }
     }
 }
