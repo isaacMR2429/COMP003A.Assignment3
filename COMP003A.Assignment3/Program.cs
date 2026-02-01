@@ -64,6 +64,7 @@
             Console.Write("Enter Choice: ");
             int guidanceOption = int.Parse(Console.ReadLine());
 
+            Console.Write("\nGuidance: ");
             switch (guidanceOption)
             {
                 case 1:
@@ -79,6 +80,7 @@
                     Console.WriteLine("Invalid choice, Please TRY AGAIN!!!");
                     break;
             }
+            
 
         }
     }
