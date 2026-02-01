@@ -17,14 +17,17 @@
             string ageCategory;
             if ( difference < 17)
             {
-                Console.WriteLine("Readines Category: Child");
+               ageCategory = "child";
+               Console.WriteLine("Readiness Category: Child");
             }
             else if ( difference >= 18 && difference <= 20)
             {
-                Console.WriteLine("Readiness Catergory: Young Adult");
+                ageCategory = "Young Adult";
+               Console.WriteLine("Readiness Category: Young Adult");
             }
             else
             {
+                ageCategory = "Adult"; 
                 Console.WriteLine("Readiness Category: Adult");
             }
 
@@ -35,6 +38,7 @@
             Console.Write("Have you completed orientation? (yes/no): ");
             string orientationInput = Console.ReadLine();
             bool completedOrientation = orientationInput == "yes";
+
         }
     }
 }
