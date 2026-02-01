@@ -56,7 +56,10 @@
                 Console.WriteLine("\nReadiness Status: Not Ready");
             }
 
-            Console.Write("");
+            Console.WriteLine("\nSelect a Guidance Option: ");
+            Console.WriteLine("1 - Academic Plannig");
+            Console.WriteLine("2 - Personal Planning");
+            Console.WriteLine("3 - Carrer Planning");
         }
     }
 }
