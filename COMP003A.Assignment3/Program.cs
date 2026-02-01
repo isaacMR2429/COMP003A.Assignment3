@@ -14,6 +14,19 @@
             int difference = currentYear - birthYear;
             Console.WriteLine($"\nCalculated age: {difference}");
 
+            string ageCategory;
+            if ( difference < 17)
+            {
+                Console.WriteLine("Readines Category: Child");
+            }
+            else if ( difference >= 18 && difference <= 20)
+            {
+                Console.WriteLine("Readiness Catergory: Young Adult");
+            }
+            else
+            {
+                Console.WriteLine("Readiness Category: Adult");
+            }
         }
     }
 }
