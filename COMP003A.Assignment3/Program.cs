@@ -60,6 +60,26 @@
             Console.WriteLine("1 - Academic Plannig");
             Console.WriteLine("2 - Personal Planning");
             Console.WriteLine("3 - Carrer Planning");
+
+            Console.Write("Enter Choice: ");
+            int guidanceOption = int.Parse(Console.ReadLine());
+
+            switch (guidanceOption)
+            {
+                case 1:
+                    Console.WriteLine("Meet with academic adviosr to plan your next term");
+                    break;
+                case 2:
+                    Console.WriteLine("Create your own personal planner and create your schedule");
+                    break;
+                case 3:
+                    Console.WriteLine("Start your carrer planning today and GET TO WORK!");
+                    break;
+                default:
+                    Console.WriteLine("Invalid choice, Please TRY AGAIN!!!");
+                    break;
+            }
+
         }
     }
 }
