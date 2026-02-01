@@ -17,7 +17,7 @@
             string ageCategory;
             if ( ageDifference < 17)
             {
-               ageCategory = "child";
+               ageCategory = "Child";
                Console.WriteLine("Readiness Category: Child");
             }
             else if ( ageDifference >= 18 && ageDifference <= 20)
@@ -77,7 +77,7 @@
                     Console.WriteLine("Start your carrer planning today and GET TO WORK!");
                     break;
                 default:
-                    Console.WriteLine("Invalid choice, Please TRY AGAIN!!!");
+                    Console.WriteLine("Invalid choice. Please TRY AGAIN!!!");
                     break;
             }
             
