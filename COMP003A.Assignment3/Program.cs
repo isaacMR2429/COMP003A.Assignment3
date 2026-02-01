@@ -11,16 +11,16 @@
             Console.Write("Enter your birth year: ");
             int birthYear = int.Parse(Console.ReadLine());
 
-            int difference = currentYear - birthYear;
-            Console.WriteLine($"\nCalculated age: {difference}");
+            int ageDifference = currentYear - birthYear;
+            Console.WriteLine($"\nCalculated age: {ageDifference}");
 
             string ageCategory;
-            if ( difference < 17)
+            if ( ageDifference < 17)
             {
                ageCategory = "child";
                Console.WriteLine("Readiness Category: Child");
             }
-            else if ( difference >= 18 && difference <= 20)
+            else if ( ageDifference >= 18 && ageDifference <= 20)
             {
                 ageCategory = "Young Adult";
                Console.WriteLine("Readiness Category: Young Adult");
